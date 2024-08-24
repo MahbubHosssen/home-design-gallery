@@ -13,19 +13,43 @@
     <!-- FontAwsome CDN -->
     <script src="https://kit.fontawesome.com/290838e588.js" crossorigin="anonymous"></script>
 
+    <!-- Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'bg-primary': '#ABEF5F',
+                'bg-black-1': '#212121',
+              }
+            }
+          }
+        }
+      </script>
+
 
     <style>
         header{
             background-image: linear-gradient(to bottom, #f4f4f4, #f4f4f4, #f4f4f4, #f4f4f4, #f4f4f4, #f5f5f5, #f6f6f6, #f7f7f7, #f9f9f9, #fbfbfb, #fdfdfd, #ffffff);
             /* background-image: url('./assets/bg.jpg'); */
         }
+        .manrope-font {
+        font-family: "Manrope", sans-serif;
+        font-style: normal;
+      }
     </style>
 </head>
-<body>
+<body class="manrope-font">
     <!-- Header -->
     <header class="">
         <!-- Nav -->
-        <nav class="container mx-auto p-3 lg:p-0 ">
+        <nav class="container mx-auto p-3 lg:p-0">
             <div class="navbar bg-base-100 bg-transparent">
                 <div class="navbar-start">
                     <div class="flex justify-center items-center gap-2">
@@ -49,7 +73,12 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                           </svg>
                      </div>
-                    <button class="px-6 btn bg-[#ABEF5F] hidden lg:block font-bold rounded-full">Book Consult <i class="fa-solid fa-arrow-right bg-black text-white p-1 rounded-full -rotate-45"></i></button>
+                    <!-- <button class="px-6 btn bg-[#ABEF5F] hidden lg:block font-bold rounded-full">Book Consult <i class="fa-solid fa-arrow-right bg-black text-white p-1 rounded-full -rotate-45"></i></button> -->
+
+                    <div class="flex justify-center items-center gap-2">
+                        <Button class="btn bg-lime-400 text-[#1C1C1C] font-bold rounded-full">Book Consult <i class="fa-solid fa-arrow-right flex justify-center items-center text-white w-7 h-7 rounded-full -rotate-45 bg-[#1C1C1C]"></i></Button>
+                    </div>
+
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg
@@ -91,9 +120,9 @@
     </header>
 
     <!-- main -->
-    <main class="bg-gray-100">
-        <!--  -->
-        <section class="container mx-auto mt-16 py-4 p-4 lg:py-16">
+    <main class="bg-gray-100 pt-12 my-12">
+        <!-- thoughtful section -->
+        <section class="container mx-auto py-4 p-4  lg:py-16 bg-[url('./assets/Vector.png')]  bg-no-repeat">
             <!-- upper -->
             <div class="lg:flex justify-between gap-6 ">
                 <!-- text content -->
@@ -286,13 +315,13 @@
     </section>
 
     <footer class="bg-[#1C1C1C]">
-        <div class="container mx-auto space-y-3 py-16 text-center">
+        <div class="container mx-auto space-y-3 py-16 text-center px-4 lg:px-0 ">
             <div class="text-center space-y-3">
                 <h1 class="text-2xl font-semibold text-white flex justify-center gap-2 items-center"> <i class="fa-solid fa-arrow-right flex justify-center items-center bg-[#ABEF5F] w-6 h-6 text-sm text-black rounded-full -rotate-45"></i> HomeHue</h1>
-                <p class="text-[#737373] w-1/2 mx-auto" >The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <p class="text-[#737373] lg:w-1/2 mx-auto" >The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
 
-            <div class="w-2/3 mx-auto flex justify-evenly text-sm text-gray-400 list-none py-8">
+            <div class="w-2/3 mx-auto lg:flex justify-evenly text-sm text-gray-400 list-none py-4 lg:py-8 space-y-3">
                 <li class=""><a href="#">Home</a></li>
                 <li><a href="#">Service</a></li>
                 <li><a href="#">Portfolio</a></li>
