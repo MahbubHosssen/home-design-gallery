@@ -266,22 +266,41 @@
         </div>
     </section>
 
-    <section class="bg-[url('./assets/bg.jpg')] bg-cover bg-no-repeat">
-        <div class="container mx-auto py-16">
+    <!-- Form section -->
+    <section class="bg-[url('./assets/bg.jpg')] bg-cover bg-no-repeat mt-4">
+        <div class="container mx-auto lg:py-16 py-8 px-4 lg:px-0">
             <div class="text-center space-y-3">
                 <h3 class="w-48 bg-lime-200 mx-auto py-1 text-lg rounded-full font-semibold"><i class="fa-solid fa-arrow-right"></i> Let's Connect</h3>
                 <h1 class="text-xl lg:text-5xl font-bold">Our Latest Portfolio</h1>
                 <p class="text-slate-600 lg:w-1/2 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
             <form class="grid grid-cols-2 gap-6 mt-6" action="">
-                <input class="outline-none bg-white border rounded-full py-3 px-6" type="text" placeholder="First Name">
-                <input class="outline-none bg-white border rounded-full py-3 px-6" type="text" placeholder="Last Name">
-                <input class="outline-none bg-white border rounded-full py-3 px-6" type="number" placeholder="Phone Number">
-                <input class="outline-none bg-white border rounded-full py-3 px-6" type="email" placeholder="Email">
+                <input class="outline-none col-span-2 lg:col-span-1 bg-white border rounded-full py-3 px-6" type="text" placeholder="First Name">
+                <input class="outline-none col-span-2 lg:col-span-1 bg-white border rounded-full py-3 px-6" type="text" placeholder="Last Name">
+                <input class="outline-none col-span-2 lg:col-span-1 bg-white border rounded-full py-3 px-6" type="number" placeholder="Phone Number">
+                <input class="outline-none col-span-2 lg:col-span-1 bg-white border rounded-full py-3 px-6" type="email" placeholder="Email">
                 <textarea class="outline-none col-span-2 bg-white border rounded-2xl py-3 px-6" name="" id="" cols="30" rows="10" placeholder="Write your message here"></textarea>
                 <button class="btn col-span-2 bg-[#ABEF5F] rounded-full font-bold">Send Mail <i class="fa-solid fa-arrow-right bg-black p-1 text-white rounded-full -rotate-45"></i></button>
             </form>
         </div>
     </section>
+
+    <footer class="bg-[#1C1C1C]">
+        <div class="container mx-auto space-y-3 py-16 text-center">
+            <div class="text-center space-y-3">
+                <h1 class="text-2xl font-semibold text-white flex justify-center gap-2 items-center"> <i class="fa-solid fa-arrow-right flex justify-center items-center bg-[#ABEF5F] w-6 h-6 text-sm text-black rounded-full -rotate-45"></i> HomeHue</h1>
+                <p class="text-[#737373] w-1/2 mx-auto" >The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+
+            <div class="w-2/3 mx-auto flex justify-evenly text-sm text-gray-400 list-none py-8">
+                <li class=""><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </div>
+            <button class="border-none btn mx-auto bg-[#ABEF5F] rounded-full font-bold">Send Mail <i class="fa-solid fa-arrow-right bg-black p-1 text-white rounded-full -rotate-45"></i></button>
+        </div>
+    </footer>
 </body>
 </html>
