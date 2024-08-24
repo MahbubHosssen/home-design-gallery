@@ -17,6 +17,7 @@
     <style>
         header{
             background-image: linear-gradient(to bottom, #f4f4f4, #f4f4f4, #f4f4f4, #f4f4f4, #f4f4f4, #f5f5f5, #f6f6f6, #f7f7f7, #f9f9f9, #fbfbfb, #fdfdfd, #ffffff);
+            /* background-image: url('./assets/bg.jpg'); */
         }
     </style>
 </head>
@@ -265,6 +266,22 @@
         </div>
     </section>
 
-    
+    <section class="bg-[url('./assets/bg.jpg')] bg-cover bg-no-repeat">
+        <div class="container mx-auto py-16">
+            <div class="text-center space-y-3">
+                <h3 class="w-48 bg-lime-200 mx-auto py-1 text-lg rounded-full font-semibold"><i class="fa-solid fa-arrow-right"></i> Let's Connect</h3>
+                <h1 class="text-xl lg:text-5xl font-bold">Our Latest Portfolio</h1>
+                <p class="text-slate-600 lg:w-1/2 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <form class="grid grid-cols-2 gap-6 mt-6" action="">
+                <input class="outline-none bg-white border rounded-full py-3 px-6" type="text" placeholder="First Name">
+                <input class="outline-none bg-white border rounded-full py-3 px-6" type="text" placeholder="Last Name">
+                <input class="outline-none bg-white border rounded-full py-3 px-6" type="number" placeholder="Phone Number">
+                <input class="outline-none bg-white border rounded-full py-3 px-6" type="email" placeholder="Email">
+                <textarea class="outline-none col-span-2 bg-white border rounded-2xl py-3 px-6" name="" id="" cols="30" rows="10" placeholder="Write your message here"></textarea>
+                <button class="btn col-span-2 bg-[#ABEF5F] rounded-full font-bold">Send Mail <i class="fa-solid fa-arrow-right bg-black p-1 text-white rounded-full -rotate-45"></i></button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
