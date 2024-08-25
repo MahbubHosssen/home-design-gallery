@@ -25,8 +25,11 @@
           theme: {
             extend: {
               colors: {
-                'bg-primary': '#ABEF5F',
-                'bg-black-1': '#212121',
+                clifford: '#da373d',
+                'black-1': '#212121',
+                'black-2': '#1C1C1C',
+                'gray-para': '#494949',
+                'gray-para-2': '#737373',
               }
             }
           }
@@ -54,7 +57,7 @@
                 <div class="navbar-start">
                     <div class="flex justify-center items-center gap-2">
                         <i class="fa-solid fa-arrow-right bg-lime-400 flex justify-center items-center text-black w-7 h-7 rounded-full -rotate-45"></i>
-                        <a class="text-2xl font-bold">HomeHue</a>
+                        <a class="text-2xl font-bold text-black-1">HomeHue</a>
                     </div>
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -69,7 +72,6 @@
                 <div class="navbar-end">
                     <div class="hidden lg:block justify-center items-center gap-2">
                         <i class="fa-solid fa-magnifying-glass bg-white flex justify-center items-center text-slate-500 w-10 h-10 rounded-full rotate-30"></i>
-                        
                     </div>
                      
                      <div class="hidden lg:block bg-white p-2 rounded-full text-slate-500 mx-4">
@@ -116,9 +118,9 @@
         <section class="container mx-auto p-4 lg:p-0">
             <div class="space-y-4 text-center">
                 <img class="mx-auto p-4" src="./assets/banner.png" alt="">
-                <h1 class="font-extrabold text-2xl lg:text-6xl w-full lg:w-3/4 lg:mx-auto">A barn house of this design has a striking appearance</h1>
-                <p class="text-gray-600 lg:w-3/4 mx-auto">Home design is the art of transforming spaces into personal havens. It's a blend of aesthetics and functionality, reflecting your unique style and creating a comfortable, inviting atmosphere.</p>
-                <button class="px-8 mx-auto btn bg-[#ABEF5F80] hidden lg:block font-bold rounded-full">View Details <i class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black p-1 rounded-full -rotate-45"></i></button>
+                <h1 class="text-black-1 font-extrabold text-2xl lg:text-6xl w-full lg:w-3/4 lg:mx-auto">A barn house of this design has a striking appearance</h1>
+                <p class="text-gray-para lg:w-3/4 mx-auto">Home design is the art of transforming spaces into personal havens. It's a blend of aesthetics and functionality, reflecting your unique style and creating a comfortable, inviting atmosphere.</p>
+                <button class="text-md w-full lg:w-40 text-black-1 mx-auto btn bg-[#ABEF5F80] font-bold flex rounded-full">View Details <i class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black p-2 rounded-full -rotate-45"></i></button>
             </div>
         </section>
     </header>
@@ -128,55 +130,55 @@
         <!-- thoughtful section -->
         <section class="container mx-auto py-4 p-4  lg:py-16 bg-none lg:bg-[url('./assets/Vector.png')]  bg-no-repeat">
             <!-- upper -->
-            <div class="lg:flex justify-between gap-6 ">
+            <div class="lg:flex justify-between gap-6">
                 <!-- text content -->
                 <div class="space-y-6 lg:w-1/2 text-center lg:text-left">
-                    <h3 class="w-32 bg-white text-center mx-auto lg:mx-0 py-1 text-lg rounded-full font-semibold"><i class="fa-solid fa-arrow-right"></i> About Us</h3>
-                    <h1 class="text-xl lg:text-5xl font-bold">We design thoughtful, <br>liveable spaces</h1>
-                    <p class="text-slate-600">We craft homes that are not just beautiful, but also functional and inviting, reflecting your unique style and ersonality.</p>
+                    <h3 class="w-32 bg-white text-center mx-auto lg:mx-0 py-1 text-lg rounded-full text-gray-para font-semibold"><i class="fa-solid fa-arrow-right"></i> About Us</h3>
+                    <h1 class="text-xl lg:text-5xl font-bold text-black-1">We design thoughtful, <br>liveable spaces</h1>
+                    <p class="text-slate-600 gray-para">We craft homes that are not just beautiful, but also functional and inviting, reflecting your unique style and ersonality.</p>
                     <div class="flex items-center gap-6 bg-white p-3 lg:p-6 rounded-xl ">
                         <img src="./assets/commercial.png" alt="">
                         <div class="space-y-2 text-left">
-                            <h5 class="text-zinc-700 text-lg font-bold">Commercial</h5>
-                            <p class="text-gray-500 lg:w-2/3">Transform your living space into a sanctuary of style. Discover endless inspiration and expert advice for creating your dream home.</p>
+                            <h5 class="text-zinc-700 text-lg font-bold text-gray-para">Commercial</h5>
+                            <p class="text-gray-para-2 lg:w-2/3">Transform your living space into a sanctuary of style. Discover endless inspiration and expert advice for creating your dream home.</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-6 bg-white p-3 lg:p-6 rounded-xl ">
                         <img src="./assets/residential.png" alt="">
                         <div class="space-y-2 text-left">
-                            <h5 class="text-zinc-700 text-lg font-bold">Residential</h5>
-                            <p class="text-gray-500 lg:w-2/3">crafting cozy, functional spaces that reflect your unique style and personality. From minimalist chic to rustic charm, find inspiration for every room.</p>
+                            <h5 class="text-zinc-700 text-lg font-bold text-gray-para">Residential</h5>
+                            <p class="text-gray-2 lg:w-2/3">crafting cozy, functional spaces that reflect your unique style and personality. From minimalist chic to rustic charm, find inspiration for every room.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- image-content -->
                 <div class="mt-6 lg:mt-0">
-                    <img class="" src="./assets/Rectangle.png" alt="">
+                    <img class="h-64 w-full lg:h-auto" src="./assets/Rectangle.png" alt="">
                 </div>
             </div>
 
             <!-- Lower -->
-            <div class="lg:flex py-12 justify-around bg-white rounded-2xl mt-16">
+            <div class="lg:flex py-12 justify-around bg-white rounded-2xl mt-16 space-y-8 lg:space-y-0">
                 <div class="1/4 text-center space-y-2">
                     <i class="fa-regular fa-message text-2xl text-slate-400"></i>
-                    <h1 class="font-bold text-4xl text-gray-600">235+</h1>
-                    <p class="text-gray-500 text-sm">Happy Client Preview</p>
+                    <h1 class="font-bold text-4xl text-gray-para">235+</h1>
+                    <p class="text-gray-para-2 text-sm">Happy Client Preview</p>
                 </div>
                 <div class="1/4 text-center space-y-2">
                     <i class="fa-regular fa-building text-2xl text-slate-400"></i>
-                    <h1 class="font-bold text-4xl text-gray-600">50+</h1>
-                    <p class="text-gray-500 text-sm">Happy Client Preview</p>
+                    <h1 class="font-bold text-4xl text-gray-600 text-gray-para">50+</h1>
+                    <p class="text-gray-para-2 text-sm">Happy Client Preview</p>
                 </div>
                 <div class="1/4 text-center space-y-2">
                     <i class="fa-solid fa-users-line text-2xl text-slate-400"></i>
-                    <h1 class="font-bold text-4xl text-gray-600">30k+</h1>
-                    <p class="text-gray-500 text-sm">Happy Client Preview</p>
+                    <h1 class="font-bold text-4xl text-gray-para">30k+</h1>
+                    <p class="text-gray-para-2 text-sm">Happy Client Preview</p>
                 </div>
                 <div class="1/4 text-center space-y-2">
                     <i class="fa-solid fa-user-group text-2xl text-slate-400"></i>
-                    <h1 class="font-bold text-4xl text-gray-600">307+</h1>
-                    <p class="text-gray-500 text-sm">Happy Client Preview</p>
+                    <h1 class="font-bold text-4xl text-gray-para">307+</h1>
+                    <p class="text-gray-para-2 text-sm">Happy Client Preview</p>
                 </div>
             </div>
         </section>
@@ -185,9 +187,9 @@
         <section class="container mx-auto pb-12 p-4">
             <!-- title text -->
             <div class="mx-auto text-center space-y-4">
-                <h3 class="w-44 bg-white text-center mx-auto py-2 text-lg rounded-full font-semibold"><i class="fa-solid fa-arrow-right"></i> How we works</h3>
-                <h1 class="text-2xl lg:text-5xl font-bold text-[#212121]">Our Works Process</h1>
-                <p class="text-slate-600 lg:w-2/4 mx-auto">A seamless journey from concept to creation. We collaborate closely with clients to understand their vision and bring it to life through innovative designs.</p>
+                <h3 class="w-44 bg-white text-center mx-auto py-2 text-lg rounded-full font-semibold text-gray-para"><i class="fa-solid fa-arrow-right"></i> How we works</h3>
+                <h1 class="text-2xl lg:text-5xl font-bold text-black-1">Our Works Process</h1>
+                <p class="text- lg:w-2/4 mx-auto text-gray-para">A seamless journey from concept to creation. We collaborate closely with clients to understand their vision and bring it to life through innovative designs.</p>
             </div>
 
             <!-- cards -->
@@ -195,26 +197,26 @@
                 <div class="grid lg:grid-cols-4 grid-cols-1 card lg:space-x-6 gap-4">
                     <div class="card-body bg-pink-300 rounded-xl">
                       <img class="w-9" src="./assets/concept.png" alt="">
-                      <h3 class="text[#1C1C1C] font-bold text-xl">Concept</h3>
-                      <p class="text-gray-700 text-sm">The seed of creation, a spark of inspiration.</p>
+                      <h3 class="text-black-2 font-bold text-xl">Concept</h3>
+                      <p class="text-gray-para text-sm">The seed of creation, a spark of inspiration.</p>
                     </div>
 
                     <div class="card-body bg-yellow-400 rounded-xl">
                        <img class="w-9" src="./assets/flow-chart.png" alt="">
-                      <h3 class="text[#1C1C1C] font-bold text-xl">Design Process</h3>
-                      <p class="text-gray-700 text-sm">From concept to creation, a journey of inspiration and transformation.</p>
+                      <h3 class="text-black-2 font-bold text-xl">Design Process</h3>
+                      <p class="text-gray-para text-sm">From concept to creation, a journey of inspiration and transformation.</p>
                     </div>
 
                     <div class="card-body bg-emerald-400 rounded-xl">
                       <img class="w-9" src="./assets/vision.png" alt="">
-                      <h3 class="text[#1C1C1C] font-bold text-xl">Supervision</h3>
-                      <p class="text-gray-700 text-sm">Ensuring your dream home is built to perfection, every detail meticulously overseen.</p>
+                      <h3 class="text-black-2 font-bold text-xl">Supervision</h3>
+                      <p class="text-gray-para text-sm">Ensuring your dream home is built to perfection, every detail meticulously overseen.</p>
                     </div>
 
                     <div class="card-body bg-blue-400 rounded-xl">
                       <img class="w-9" src="./assets/budget-planning.png" alt="">
-                      <h3 class="text[#1C1C1C] font-bold text-xl">Budget Planning</h3>
-                      <p class="text-gray-700 text-sm">turning your dream home into a reality without breaking the bank. Maximize your budget with smart choices and creative solutions.</p>
+                      <h3 class="text-black-2 font-bold text-xl">Budget Planning</h3>
+                      <p class="text-gray-para text-sm">turning your dream home into a reality without breaking the bank. Maximize your budget with smart choices and creative solutions.</p>
                     </div>
                 </div>
             </div>
@@ -226,9 +228,9 @@
         <div class="container mx-auto">
             <!-- title text -->
             <div class="text-center space-y-4">
-                <h3 class="w-64 bg-lime-200 mx-auto py-1 text-lg rounded-full font-semibold"><i class="fa-solid fa-arrow-right"></i> Explore our Latest works</h3>
-                <h1 class="text-xl lg:text-5xl font-bold">Our Latest Portfolio</h1>
-                <p class="text-slate-600 lg:w-1/2 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <h3 class="w-64 bg-lime-200 mx-auto py-1 text-lg rounded-full font-semibold text-gray-para"><i class="fa-solid fa-arrow-right"></i> Explore our Latest works</h3>
+                <h1 class="text-xl lg:text-5xl font-bold text-black-1">Our Latest Portfolio</h1>
+                <p class="text-slate-600 lg:w-1/2 mx-auto text-black-1">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
 
             <!-- grid -->
